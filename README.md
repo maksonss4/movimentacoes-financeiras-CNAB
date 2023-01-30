@@ -23,7 +23,7 @@
 ---
 
 ## 1. Descrição do projeto
-A aplicação tem uma interface web que aceita upload de arquivos CNAB em formato .txt (com os dados das movimentações financeiras de várias lojas), que normalizará os dados e os armazenará em um banco de dados relacional exibindo essas informações em tela.
+A aplicação tem uma interface web que aceita upload de arquivos CNAB em formato .txt (com os dados das movimentações financeiras de várias lojas), que normaliza os dados e os armazena em um banco de dados exibindo essas informações em tela.
  
 ### 1.1 Documentação CNAB
 ![DER](./imgs/documentacao-CNAB.png)
