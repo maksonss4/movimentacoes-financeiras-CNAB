@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transações</title>
+</head>
+<body>
+    <h1>Transações</h1>
+    <table style="text-align: center;">
+        <tr>
+            <th>Tipo</th>
+            <th>Descrição</th>
+            <th>Natureza</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Débito</td>
+            <td>Entrada</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Boleto</td>
+            <td>Saída</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Financeamento</td>
+            <td>Saída</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Crédito</td>
+            <td>Entrada</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Recebimento empréstimo</td>
+            <td>Entrada</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Vendas</td>
+            <td>Entradas</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Recebimento TED</td>
+            <td>Entrada</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Recebimento DOC</td>
+            <td>Entrada</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Aluguel</td>
+            <td>Saída</td>
+        </tr>
+    </table>
+    <p>Transações registradas</p>
+    <ul>
+        {% for transaction in alltransactions %}
+        <li>
+            <h3>{{transaction.store_name}}</h3>
+            <p>Tipo de transação: {{transaction.type}}</p>
+            <span>Valor: {{transaction.value}}</span>
+        </li>
+          {% endfor %}
+    </ul>
+</body>
+</html>
