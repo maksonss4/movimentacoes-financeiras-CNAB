@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ### 3.4 Crie um arquivo .env na raiz do projeto
 Copie o formato do arquivo .env.example para o arquivo .env e preencha as variáveis, exemplo:
 ```
-SECRET_KEY="sua_chave_secreta"
+SECRET_KEY="sua_chave_secreta" 
 ```
 
 ### 3.5 Rode as migrações 
